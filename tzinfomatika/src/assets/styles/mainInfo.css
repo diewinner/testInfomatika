@@ -1,7 +1,6 @@
 .main_container {
     background: radial-gradient(at 50% 50%, #887fa3, #191036) no-repeat;
     height: 100vh;
-    position: relative;
 }
 .main_container::before {
     content: '';
