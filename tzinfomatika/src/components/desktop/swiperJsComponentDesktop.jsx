@@ -33,7 +33,7 @@ export const SwiperJsComponentDesktop = () => {
                             <div className={index === activeSlideIndex ? 'swiper_item_text_other' : 'swiper_item_text_other_disable'}>{match.date.toUpperCase()}</div>
                             <div
                                 className={index === activeSlideIndex ? 'swiper_item_text' : 'invisible_text'}>{match.time}</div>
-                            <a className={index === activeSlideIndex ? 'slider_item_btn_active' : 'invisible_text'}>Купить билеты</a>
+                            <a className={index === activeSlideIndex ? 'swiper_item_btn_active' : 'invisible_text'}>Купить билеты</a>
                         </div>
                     </SwiperSlide>
                     )

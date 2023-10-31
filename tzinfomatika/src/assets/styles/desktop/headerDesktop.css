@@ -9,7 +9,6 @@
     width: 100%;
 }
 
-
 .header_title {
     display: flex;
     align-items: center;
@@ -23,7 +22,6 @@
     transform: scale(1.05);
 }
 
-
 .header_nav {
     display: flex;
     justify-content: center;
@@ -31,39 +29,15 @@
 
 }
 
-
 .header_nav_item {
     display: flex;
     align-items: center;
     transition: color 0.5s, transform 1s;
     cursor: pointer;
 }
-
 .header_nav_item:hover {
     color: #9885ce;
     transform: scale(1.05);
-}
-
-
-.header_sign_in_container {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    transition: color 0.5s, transform 1s;
-    cursor: pointer;
-}
-
-.header_sign_in_container:hover {
-    color: #9885ce;
-    transform: scale(1.05);
-}
-
-.header_sign_in_container svg g {
-    transition: fill 0.5s, transform 1s;
-}
-
-.header_sign_in_container:hover svg g {
-    fill: #9885ce;
 }
 
 .header_tabs {
@@ -73,18 +47,33 @@
     justify-content:space-between;
 }
 
+.header_sign_in_container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: color 0.5s, transform 1s;
+    cursor: pointer;
+}
+.header_sign_in_container:hover {
+    color: #9885ce;
+    transform: scale(1.05);
+}
+.header_sign_in_container svg g {
+    transition: fill 0.5s, transform 1s;
+}
+.header_sign_in_container:hover svg g {
+    fill: #9885ce;
+}
+
 .header_burger {
     display: flex;
     align-items: center;
     transition: color 0.5s;
     cursor: pointer;
 }
-
-
 .header_burger svg g line {
     transition: stroke 0.5s;
 }
-
 .header_burger:hover svg g line {
     stroke: #9885ce;
 }

@@ -9,7 +9,7 @@ export const HeaderMobile = () => {
     const [menuOn, setMenuOn] = useState(false)
 
     return (
-        <header className={'m_header'}>
+        <header >
             <CSSTransition in={menuOn} timeout={300} classNames="menu-animation">
                 {menuOn === false ?
                     <div  className={'m_burger_btn'} onClick={() => setMenuOn(true)}>

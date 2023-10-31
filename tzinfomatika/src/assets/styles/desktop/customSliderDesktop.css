@@ -35,18 +35,22 @@
     font-size: 13px;
     display: block;
 }
+.invisible_text {
+    display: none;
+}
 
 .swiper_item_text_other {
     color:black;
     font-size: 16px;
     font-weight: 700;
 }
-
-.invisible_text {
-    display: none;
+.swiper_item_text_other_disable {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
 }
 
-.slider_item_btn_active {
+.swiper_item_btn_active {
     padding: 5px 10px;
     border:1px solid black;
     border-radius: 5px;
@@ -55,11 +59,12 @@
     color:black;
     transition: color 0.5s, transform 0.5s, border 0.5s;
 }
-.slider_item_btn_active:hover {
+.swiper_item_btn_active:hover {
     border: 1px solid #9885ce;
     color:#9885ce;
     transform: scale(1.05);
 }
+
 
 .swiper_team_one_active {
     position: absolute;
@@ -76,8 +81,6 @@
     font-size: 35px;
     z-index: 1;
 }
-
-
 
 .swiper_team_two_active {
     position: absolute;
@@ -99,21 +102,8 @@
     display: none;
 }
 
-.slider_container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    z-index: 999999999999999999;
-    position: relative;
-}
 
-
-.swiper_item_text_other_disable {
-    font-size: 14px;
-    font-weight: 700;
-    display: block;
-}
-
+/* root style swiperJs */
 .swiper-slide {
     display: flex !important;
     align-items: center;

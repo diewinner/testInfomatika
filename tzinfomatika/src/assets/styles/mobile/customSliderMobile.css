@@ -103,6 +103,9 @@
 
 
 
+
+/* root style swiperJS */
+
 .swiper-slide {
     display: flex !important;
     align-items: center;
