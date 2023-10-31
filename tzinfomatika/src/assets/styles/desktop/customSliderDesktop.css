@@ -1,0 +1,158 @@
+.swiper_custom_wrapper {
+    display: flex!important;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    transform: rotate(-35deg);
+    z-index: 55;
+    position: relative;
+}
+
+.mySwiper {
+    display: flex!important;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.swiper_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+    background: white;
+    width: 10vw;
+    height: 10vw;
+    transform: rotate(35deg);
+    cursor: pointer;
+}
+
+.swiper_item_text {
+    color:black;
+    font-size: 13px;
+    display: block;
+}
+
+.swiper_item_text_other {
+    color:black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.invisible_text {
+    display: none;
+}
+
+.slider_item_btn_active {
+    padding: 5px 10px;
+    border:1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    text-decoration: none;
+    color:black;
+    transition: color 0.5s, transform 0.5s, border 0.5s;
+}
+.slider_item_btn_active:hover {
+    border: 1px solid #9885ce;
+    color:#9885ce;
+    transform: scale(1.05);
+}
+
+.swiper_team_one_active {
+    position: absolute;
+    bottom: 87%;
+    right: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 12vh;
+    clip-path: polygon(0 0%, 100% 0%, 94% 100%, 0 100%);
+    transform: rotate(35deg);
+    font-size: 35px;
+    z-index: 1;
+}
+
+
+
+.swiper_team_two_active {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 12vh;
+    clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0 100%);
+    transform: rotate(35deg);
+    font-size: 35px;
+
+}
+
+.swiper_team_disable {
+    display: none;
+}
+
+.slider_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 999999999999999999;
+    position: relative;
+}
+
+
+.swiper_item_text_other_disable {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+
+.swiper-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all ease-in-out .3s
+}
+
+.swiper-slide-active {
+    transform: scale(1.6)!important;
+}
+
+.swiper-slide-next {
+    transform: scale(1.2)!important;
+}
+
+.swiper-slide-prev {
+    transform: scale(1.2)!important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

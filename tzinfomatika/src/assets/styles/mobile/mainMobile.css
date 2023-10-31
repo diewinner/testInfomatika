@@ -1,0 +1,40 @@
+:root {
+    --size: 60vw;
+    --widthContainer: 100vw;
+    --sizeSec: 95vw;
+}
+.m_main_container {
+    width: var(--widthContainer);
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(at 50% 50%, #887fa3, #191036) no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m_main_container::before {
+    content: '';
+    width:var(--size);
+    height: var(--size);
+    position: absolute;
+    border-radius: 50%;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.m_main_container::after {
+    content: '';
+    width:var(--sizeSec);
+    height: var(--sizeSec);
+    border-radius: 50%;
+    border:1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

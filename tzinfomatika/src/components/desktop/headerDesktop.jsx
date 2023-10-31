@@ -1,9 +1,9 @@
-import '../assets/styles/header.css'
-import {DoorSignIn} from "../assets/img/svg/doorSignIn";
-import {Burger} from "../assets/img/svg/burger";
-export const Header = () => {
+import {DoorSignInSvg} from "../../assets/img/svg/doorSignInSvg";
+import {BurgerSvg} from "../../assets/img/svg/burger";
+import '../../assets/styles/desktop/headerDesktop.css'
+export const HeaderDesktop = () => {
 
-    const titles = [ 'как купить?', 'правила','возврат билетов']
+    const titles = [ 'как купить?', 'правила','возврат билетов',]
 
     function Capitalizer(str) {
         return str.charAt(0).toUpperCase() + str.slice(1)
@@ -19,11 +19,11 @@ export const Header = () => {
             </nav>
             <div className={'header_tabs'}>
                 <a className={'header_sign_in_container'}>
-                    <DoorSignIn width={25} height={25}/>
+                    <DoorSignInSvg width={25} height={25}/>
                     <span>Войти</span>
                 </a>
                 <a className={'header_burger'}>
-                    <Burger width={35} height={35}/>
+                    <BurgerSvg width={45} height={45}/>
                 </a>
             </div>
         </header>

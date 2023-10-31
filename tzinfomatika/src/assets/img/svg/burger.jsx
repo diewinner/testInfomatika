@@ -1,4 +1,4 @@
-export const Burger = ({width, height}) => {
+export const BurgerSvg = ({width, height}) => {
     return (
         <svg width={width} height={height} viewBox="0 0 72 72" id="emoji"  xmlns="http://www.w3.org/2000/svg">
             <g id="color"/>
