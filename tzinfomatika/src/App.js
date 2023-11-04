@@ -5,7 +5,8 @@ import {MainPageMobile} from "./components/mobile/mainPageMobile";
 function App() {
     const windowSize = useWindowSize()
     if (windowSize.desktop) {
-        return <MainPageDesktop  />;
+        return <MainPageDesktop  />
+
     } else if (windowSize.mobile) {
         return <MainPageMobile />;
     }

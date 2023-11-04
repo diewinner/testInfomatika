@@ -110,21 +110,24 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    transition: all ease-in-out .3s
+    transition: all ease-in-out .3s;
+    height: 25%;
 }
 
-.swiper-slide-active {
-    transform: scale(1.5)!important;
+.swiper-slide-active  {
+    transform: scale(2.5)!important;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .swiper-slide-next {
-    transform: scale(1.1)!important;
+    transform: scale(1.5)!important;
+    margin-right: -70px;
 }
 
-.swiper-slide-prev {
-    transform: scale(1.1)!important;
-
+.swiper-slide-prev  {
+    transform: scale(1.5)!important;
+    margin-left: -70px;
 }
 
 

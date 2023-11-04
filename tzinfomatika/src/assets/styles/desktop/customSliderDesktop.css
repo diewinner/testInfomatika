@@ -1,7 +1,15 @@
+.desktop_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
 .swiper_custom_wrapper {
     display: flex!important;
     align-items: center;
     height: 100%;
+    width: 100%;
     justify-content: center;
     transform: rotate(-35deg);
     z-index: 55;
@@ -11,8 +19,8 @@
 .mySwiper {
     display: flex!important;
     align-items: center;
-    width: 1200px;
-    height: 100%;
+    width: 135vh;
+    height: 100vh;
     border-radius: 50%;
 }
 
@@ -22,17 +30,19 @@
     flex-direction: column;
     justify-content: center;
     gap: 5%;
-    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-    background: white;
-    width: 10vw;
-    height: 10vw;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 157 137' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_3_17)'%3E%3Cpath d='M111.137 3H39.9077C38.0996 3 36.4324 3.97615 35.5474 5.55289L1.88411 65.5338C1.0253 67.064 1.03151 68.9325 1.90047 70.4569L35.5415 129.476C36.431 131.037 38.0892 132 39.8854 132H111.071C112.89 132 114.566 131.011 115.447 129.419L149.131 68.476C149.981 66.9398 149.962 65.0708 149.082 63.5518L115.464 5.49448C114.57 3.95059 112.921 3 111.137 3Z' fill='white'/%3E%3Cpath d='M39.9077 3.5H111.137C112.743 3.5 114.227 4.35553 115.032 5.74504L148.65 63.8023C149.441 65.1694 149.458 66.8515 148.694 68.2342L115.009 129.177C114.217 130.61 112.708 131.5 111.071 131.5H39.8854C38.2688 131.5 36.7765 130.633 35.9759 129.228L2.33485 70.2093C1.55279 68.8373 1.5472 67.1557 2.32013 65.7785L35.9835 5.7976C36.7799 4.37853 38.2804 3.5 39.9077 3.5Z' stroke='%23FFF7F7'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_3_17' x='0.244339' y='0' width='156.511' height='137' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='1'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_3_17'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_3_17' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 50% 0;
+    width: 50%;
+    height: 50%;
     transform: rotate(35deg);
     cursor: pointer;
 }
 
 .swiper_item_text {
     color:black;
-    font-size: 13px;
+    font-size: 0.5vw;
     display: block;
 }
 .invisible_text {
@@ -41,11 +51,11 @@
 
 .swiper_item_text_other {
     color:black;
-    font-size: 16px;
+    font-size: 0.7vw;
     font-weight: 700;
 }
 .swiper_item_text_other_disable {
-    font-size: 14px;
+    font-size: 0.6vw;
     font-weight: 700;
     display: block;
 }
@@ -54,7 +64,7 @@
     padding: 5px 10px;
     border:1px solid black;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 0.2vw;
     text-decoration: none;
     color:black;
     transition: color 0.5s, transform 0.5s, border 0.5s;
@@ -68,34 +78,34 @@
 
 .swiper_team_one_active {
     position: absolute;
-    bottom: 87%;
-    right: 50%;
-    background-color: white;
+    bottom: 52vh;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 477 115' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-716 13.9798C-716 7.36028 -710.64 1.99097 -704.02 1.97982L469.477 0.00340664C470.802 0.00117578 472.103 0.351796 473.247 1.01921V1.01921C475.827 2.52389 477.26 5.42227 476.889 8.38544L476.741 9.57013C476.582 10.8428 476.161 12.0687 475.503 13.17L421.472 103.684C419.317 107.294 415.43 109.512 411.226 109.533L-703.942 114.942C-710.592 114.974 -716 109.592 -716 102.942V13.9798Z' fill='white'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-    height: 12vh;
-    clip-path: polygon(0 0%, 100% 0%, 94% 100%, 0 100%);
-    transform: rotate(35deg);
+    width: 55vh;
+    height: 15vh;
     font-size: 35px;
     z-index: 1;
 }
 
 .swiper_team_two_active {
     position: absolute;
-    top: 87%;
-    left: 50%;
-    background-color: white;
+    top: 52vh;
+    right: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 513 115' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1193 101.02C1193 107.64 1187.64 113.009 1181.02 113.02L8.02057 114.997C6.69585 114.999 5.39441 114.648 4.25027 113.98V113.98C1.67226 112.476 0.240081 109.579 0.610158 106.617L0.758492 105.43C0.917506 104.157 1.33894 102.931 1.99612 101.83L56.0035 11.3181C58.1581 7.70725 62.0454 5.48752 66.2502 5.46712L1180.94 0.0585076C1187.59 0.0262406 1193 5.4082 1193 12.0584V101.02Z' fill='white'/%3E%3C/svg%3E ");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-    height: 12vh;
-    clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0 100%);
-    transform: rotate(35deg);
+    width: 55vh;
+    height: 15vh;
     font-size: 35px;
-
 }
 
 .swiper_team_disable {
@@ -108,21 +118,26 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    height: 100%;
     transition: all ease-in-out .3s
 }
 
-.swiper-slide-active {
-    transform: scale(1.6)!important;
+.swiper-per-slide-active {
+    transform: scale(1.5)!important;
 }
 
 .swiper-slide-next {
-    transform: scale(1.2)!important;
+    transform: scale(1.1)!important;
 }
 
 .swiper-slide-prev {
-    transform: scale(1.2)!important;
+    transform: scale(1.1)!important;
 
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

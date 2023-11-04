@@ -11,7 +11,7 @@ export const HeaderDesktop = () => {
 
     return (
         <header className={'header_container'}>
-            <a className={'header_title'}>БИЛЕТЫ И АБОНИМЕНТЫ</a>
+            <a className={'header_title'}>БИЛЕТЫ И АБОНEМЕНТЫ</a>
             <nav className={'header_nav'}>
                 {titles.map((e, index) => (
                     <a key={index} className={'header_nav_item'}>{Capitalizer(e)}</a>

@@ -11,8 +11,9 @@ export const SwiperJsComponentDesktop = () => {
     const [activeSlideIndex,setActiveSlideIndex] =useState(0)
 
     return (
-      <div className={'swiper_custom_wrapper'}>
-          <Swiper
+        <div className={'desktop_container'}>
+            <div className={'swiper_custom_wrapper'}>
+                <Swiper
               slidesPerView={5}
               centeredSlides={true}
               className="mySwiper"
@@ -40,11 +41,12 @@ export const SwiperJsComponentDesktop = () => {
 
               })}
           </Swiper>
-          <MoreInfoTeamDesktop
-              activeSlideIndex={activeSlideIndex}
-              teamOne={titleGames[activeSlideIndex].teamOne}
-              teamTwo={titleGames[activeSlideIndex].teamTwo}
-          />
       </div>
+            <MoreInfoTeamDesktop
+                activeSlideIndex={activeSlideIndex}
+                teamOne={titleGames[activeSlideIndex].teamOne}
+                teamTwo={titleGames[activeSlideIndex].teamTwo}
+            />
+    </div>
   )
 }
